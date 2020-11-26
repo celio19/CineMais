@@ -5,7 +5,7 @@ public class Cinema {
 
     private Data data;
     private ArayList<Salas> minhasSalas = new ArayList<Salas>();
-    private ArayList<Filmes> meusFilmes = new ArayList<Filmes>();
+    private ArayList<Filme> meusFilmes = new ArayList<Filme>();
     private ArayList<Sessoes> minhasSessoes = new ArayList<Sessoes>();
 
     // Construtor da classe Cinema
@@ -23,7 +23,7 @@ public class Cinema {
         }   
     }
     
-    public void addFilmes (Filmes novoFilme) {
+    public void addFilmes (Filme novoFilme) {
         meusFilmes.forEach (int i: meusFilmes) {
             if (meusFilmes[i] == null) {
                 meusFilmes = novoFilme;

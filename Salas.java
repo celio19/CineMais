@@ -1,6 +1,8 @@
 public abstract class Salas {
     protected String numeroSala;
     protected int capacidade;
+    private Filme filmes;
+    private Estoque estoque;
 
     public Salas (String numeroSala, int capacidade) {
         this.numeroSala = numeroSala;
