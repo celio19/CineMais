@@ -8,11 +8,7 @@ public class Cinema {
     private ArrayList<Filme> meusFilmes = new ArrayList<Filme>();
     private ArrayList<Sessoes> minhasSessoes = new ArrayList<Sessoes>();
 
-    // Construtor da classe Cinema
-    public Cinema (String nomeCinema, Data data) {
-        this.nomeCinema = nomeCinema;
-    }
-    
+    // BEGIN Métodos
     // BEGIN Adicionar
     public void addSalas (Salas novaSala) {
         minhasSalas.add(novaSala);
@@ -25,6 +21,8 @@ public class Cinema {
     public void addSessoes (Sessoes novaSessao) {
         minhasSessoes.add(novaSessao);
     }
+    //END Adicionar
+    // END Métodos  
     
     //GETs
     

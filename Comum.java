@@ -1,7 +1,7 @@
 public class Comum extends Ingresso {
     
-    public Comum (Sessoes sessao, Data data, float valorIngresso) {
-        super (sessao, data, valorIngresso);
+    public Comum (Sessoes sessao, float valorIngresso) {
+        super (sessao, valorIngresso);
     }
     
     public void cancelarIngresso () {

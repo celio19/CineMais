@@ -1,7 +1,7 @@
 public class Estudante extends Ingresso {
     
-    public Estudante (Sessoes sessao, Data data, float valorIngresso) {
-        super (sessao, data, valorIngresso);
+    public Estudante (Sessoes sessao, float valorIngresso) {
+        super (sessao, valorIngresso);
     }
     
     public void cancelarIngresso () {

@@ -1,9 +1,8 @@
 public abstract class Ingresso {
     protected Sessoes sessao;
-    protected Data data;
     protected float valorIngresso;
 
-    public Ingresso (Sessoes sessao, Data data, float valorIngresso) {
+    public Ingresso (Sessoes sessao, float valorIngresso) {
         this.valorIngresso = valorIngresso;
     }
     
