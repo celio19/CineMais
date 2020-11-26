@@ -1,3 +1,5 @@
+import java.util.*;
+
 public abstract class Salas {
     protected String numeroSala;
     protected int capacidade;

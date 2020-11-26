@@ -1,12 +1,12 @@
-import java.until.*;
+import java.util.*;
 
 public class Cinema {
     private String nomeCinema;
 
     private Data data;
-    private ArayList<Salas> minhasSalas = new ArayList<Salas>();
-    private ArayList<Filme> meusFilmes = new ArayList<Filme>();
-    private ArayList<Sessoes> minhasSessoes = new ArayList<Sessoes>();
+    private ArrayList<Salas> minhasSalas = new ArrayList<Salas>();
+    private ArrayList<Filme> meusFilmes = new ArrayList<Filme>();
+    private ArrayList<Sessoes> minhasSessoes = new ArrayList<Sessoes>();
 
     // Construtor da classe Cinema
     public Cinema (String nomeCinema) {
@@ -15,30 +15,15 @@ public class Cinema {
     
     // BEGIN Adicionar
     public void addSalas (Salas novaSala) {
-        minhasSalas.forEach (int i: minhasSalas) {
-            if (minhasSalas[i] == null) {
-                minhasSalas = novaSala;
-                break;
-            }  
-        }   
+        minhasSalas.add(novaSala);
     }
     
     public void addFilmes (Filme novoFilme) {
-        meusFilmes.forEach (int i: meusFilmes) {
-            if (meusFilmes[i] == null) {
-                meusFilmes = novoFilme;
-                break;
-            }
-        }
+        meusFilmes.add(novoFilme);
     }
     
     public void addSessoes (Sessoes novaSessao) {
-        minhasSessoes.forEach (int i: minhasSessoes) {
-            if (minhasSessoes[i] == null) {
-                minhasSessoes = novaSessao;
-                break;
-            }
-        }
+        minhasSessoes.add(novaSessao);
     }
     
     //GETs

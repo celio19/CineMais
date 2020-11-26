@@ -1,5 +1,7 @@
+import java.util.*;
+
 public class Sala3D extends Salas {
-    private ArayList<Equipamentos> meusEquipamentos = new ArayList<Equipamentos>();;
+    private ArrayList<Equipamentos> meusEquipamentos = new ArrayList<Equipamentos>();;
     
     public Sala3D (String numeroSala, int capacidade, Equipamentos equipamentos) {
     	super (numeroSala, capacidade);
@@ -7,12 +9,7 @@ public class Sala3D extends Salas {
     
     // BEGIN Adicionar
     public void addEquipamentos (Equipamentos novoEquipamento) {
-    	meusEquipamentos.forEach (int i: meusEquipamentos) {
-    		if (meusEquipamentos [i] == null) {
-    			meusEquipamentos = novoEquipamento;
-    			break;
-    		}
-    	}	
+    	meusEquipamentos.add(novoEquipamento);	
     }
     //END Adicionar
 }

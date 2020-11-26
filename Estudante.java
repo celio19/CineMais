@@ -1,14 +1,14 @@
 public class Estudante extends Ingresso {
     
     public Estudante (Sessoes sessao, Data data, float valorIngresso) {
-        super (valorIngresso);
+        super (sessao, data, valorIngresso);
     }
     
     public void cancelarIngresso () {
     
     }
     
-    public float calcularIngresso () {
+    public void calcularIngresso () {
     
     }
     

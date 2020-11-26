@@ -9,7 +9,7 @@ public abstract class Ingresso {
     
     public abstract void cancelarIngresso ();
     
-    public abstract float calcularIngresso ();
+    public abstract void calcularIngresso ();
     
     public abstract void alterarIngresso ();
 
