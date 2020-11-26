@@ -5,7 +5,16 @@ public class Filme {
     private String categoria;
     private int duracaoFilme;
     private int classificacaoEtaria;
- 
+    
+    public Filme (String titulo, String diretor, String atorPrincipal, String categoria, int duracaoFilme, int classificacaoEtaria) {
+        this.titulo = titulo;
+        this.diretor = diretor;
+        this.atorPrincipal = atorPrincipal;
+        this.categoria = categoria;
+        this.duracaoFilme = duracaoFilme;
+        this.classificacaoEtaria = classificacaoEtaria;
+    }
+    
     // GETs
     
     public String getTitulo () {

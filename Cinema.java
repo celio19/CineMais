@@ -9,7 +9,7 @@ public class Cinema {
     private ArrayList<Sessoes> minhasSessoes = new ArrayList<Sessoes>();
 
     // Construtor da classe Cinema
-    public Cinema (String nomeCinema) {
+    public Cinema (String nomeCinema, Data data) {
         this.nomeCinema = nomeCinema;
     }
     
