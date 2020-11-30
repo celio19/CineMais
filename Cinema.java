@@ -3,13 +3,17 @@ import java.util.*;
 public class Cinema {
     private String nomeCinema;
 
-    private Data data;
+    private Data diaSemana;
     private ArrayList<Salas> minhasSalas = new ArrayList<Salas>();
     private ArrayList<Filme> meusFilmes = new ArrayList<Filme>();
     private ArrayList<Sessoes> minhasSessoes = new ArrayList<Sessoes>();
-
-    // BEGIN Métodos
-    // BEGIN Adicionar
+    
+    public Cinema (String nomeCinema, Data diaSemana) {
+        this.nomeCinema = nomeCinema;
+    }
+    
+    //BEGIN Métodos
+   
     public void addSalas (Salas novaSala) {
         minhasSalas.add(novaSala);
     }
@@ -21,19 +25,28 @@ public class Cinema {
     public void addSessoes (Sessoes novaSessao) {
         minhasSessoes.add(novaSessao);
     }
-    //END Adicionar
-    // END Métodos  
     
-    //GETs
+    public void addData () {
+        String data;
+        data = diaSemana.getDiaSemana ();
+    }
+    
+    //END Métodos  
+    
+    //BEGIN GETs
     
     public String getNome () {
         return this.nomeCinema;
     }
     
-    //SETs
+    //END GETs
+    
+    //BEGIN SETs
     
     public void setNome (String novoNome) {
         this.nomeCinema = novoNome;
     }
+    
+    //END SETs
 }
 

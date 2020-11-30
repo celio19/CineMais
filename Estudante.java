@@ -1,8 +1,11 @@
 public class Estudante extends Ingresso {
     
+    // Construtor
     public Estudante (Sessoes sessao, float valorIngresso) {
         super (sessao, valorIngresso);
     }
+    
+    //BEGIN Metodos
     
     public void cancelarIngresso () {
     
@@ -19,4 +22,6 @@ public class Estudante extends Ingresso {
     public void imprimirTicket () {
         System.out.println ("");
     }
+    
+    //END Metodos
 }

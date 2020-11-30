@@ -11,7 +11,7 @@ public abstract class Salas {
         this.capacidade = capacidade;
     }
 
-    // GETs
+    //BEGIN GETs
     
     public String getNumeroSala () {
         return this.numeroSala;
@@ -21,7 +21,9 @@ public abstract class Salas {
         return this.capacidade;
     }
     
-    //SETs
+    //END GETs
+    
+    //BEGIN SETs
     
     public void setNumeroSala (String novoNumeroSala) {
         this.numeroSala = novoNumeroSala;
@@ -30,5 +32,7 @@ public abstract class Salas {
     public void setCapacidade (int novaCapacidade) {
         this.capacidade = novaCapacidade;
     }
+    
+    //END SETs
 }
 

@@ -5,6 +5,7 @@ public class Sessoes {
     private Horario horario;
     private Estoque estoque;
     
+    //Construtor
     public Sessoes (Data data, Salas sala, Filme filme, Horario horario, Estoque estoque) {
         
     }

@@ -15,7 +15,7 @@ public class Filme {
         this.classificacaoEtaria = classificacaoEtaria;
     }
     
-    // GETs
+    //BEGIN GETs
     
     public String getTitulo () {
         return this.titulo;
@@ -41,8 +41,9 @@ public class Filme {
         return this.classificacaoEtaria;
     }
     
+    //END GETs
     
-    //SETs
+    //BEGIN SETs
     
     public void setTitulo (String novoTitulo) {
         this.titulo = novoTitulo;
@@ -67,4 +68,6 @@ public class Filme {
     public void setClassificacaoEtaria (int novaClassificacaoEtaria) {
         this.classificacaoEtaria = novaClassificacaoEtaria;
     }
+    
+    //END SETs
 }
